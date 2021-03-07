@@ -111,7 +111,20 @@ After finishing your required elements, you can push your work further. These go
 
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
+
 1. Explain the difference between Relational Databases and SQL.
+Answer: 
+A relational database organizes data into tables which can be linked—or related—based on data common to each.
+While SQL Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system (RDBMS), or for stream processing in a relational data stream management system (RDSMS).
+
 2. Why do tables need a Primary Key?
+Answer: 
+Primaryk ke is uniquely identify each record in a table and it is importent for relationship with other tables.
+
 3. What is the name given to a table column that references the Primary Key on another table?
+AnswerL
+Foreign key which refrence the primary key in main table. 
+
 4. What do we need in order to have a _many to many_ relationship between two tables?
+Answer:
+We need third table to have foreign keys from the tables which we want to connect them. 
