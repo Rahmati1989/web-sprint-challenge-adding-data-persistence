@@ -8,8 +8,8 @@ function getTasks() {
 
 
 function insertTasks(tasks) {
-    return db('tasks').insert(tasks).then((ids) => {
-      return getResourcesById(ids[0]);
+ return db('tasks').insert(tasks).then((ids) => {
+      return getTasks();
     });
   }
 

@@ -12,8 +12,8 @@ function getResources() {
 // }
 
 function insertResources(resources) {
-    return db('resources').insert(resources).then((ids) => {
-      return getResourcesById(ids[0]);
+   return db('resources').insert(resources).then((ids) => {
+      return getResources();
     });
   }
 
