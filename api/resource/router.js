@@ -6,7 +6,7 @@ const db = require("./model")
 
 const router = express.Router()
 
-router.get("/resources", async (req, res, next) =>{
+router.get("/api/resources", async (req, res, next) =>{
     try {
         const resource = await db.getResources()
         res.json(resource)
@@ -16,7 +16,7 @@ router.get("/resources", async (req, res, next) =>{
 })
 
 
-router.post("/resources", async (req,res,next) => {
+router.post("/api/resources", async (req,res,next) => {
 try {
     const resource = await db.insertResources(req.boy)
     res.status(201).json(resource)

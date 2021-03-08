@@ -4,7 +4,7 @@ const db = require("./model")
 
 const router = express.Router()
 
-router.get("/projects", async (req, res, next) =>{
+router.get("/api/projects", async (req, res, next) =>{
     try {
         const project = await db.getProjects()
         res.json(project)
@@ -14,7 +14,7 @@ router.get("/projects", async (req, res, next) =>{
 })
 
 
-router.post("/projects", async (req,res,next) => {
+router.post("/api/projects", async (req,res,next) => {
 try {
     const project = await db.insertProjects(req.body)
     res.status(201).json(project)
