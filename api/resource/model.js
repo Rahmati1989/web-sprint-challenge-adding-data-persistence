@@ -5,11 +5,11 @@ function getResources() {
     return db('resources')
 }
 
-function getResourcesById(resource_id) {
-    return db("resources")
-    .where({ resource_id })
-    .first();
-}
+// function getResourcesById(resource_id) {
+//     return db("resources")
+//     .where({ resource_id })
+//     .first();
+// }
 
 function insertResources(resources) {
     return db('resources').insert(resources).then((ids) => {
@@ -19,6 +19,6 @@ function insertResources(resources) {
 
   module.exports = {
     getResources,
-    getResourcesById,
+    // getResourcesById,
     insertResources,
   }
