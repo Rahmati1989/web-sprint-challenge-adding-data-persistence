@@ -22,3 +22,4 @@ try {
     next(error)
 }
 })
+module.exports = router;

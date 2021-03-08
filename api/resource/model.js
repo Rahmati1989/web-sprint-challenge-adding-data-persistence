@@ -19,6 +19,5 @@ function insertResources(resources) {
 
   module.exports = {
     getResources,
-    // getResourcesById,
     insertResources,
   }
